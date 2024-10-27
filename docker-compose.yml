@@ -1,0 +1,15 @@
+version: '3'
+services:
+  dmm_info_management_jobs:
+    restart: always
+    build: .
+    container_name: 'dmm_info_management_jobs'
+    working_dir: '/app'
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - '8080:8080'
+    env_file:
+      - .env
+    platform: 'linux/amd64'

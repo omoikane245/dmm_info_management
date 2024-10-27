@@ -1,0 +1,10 @@
+application:
+  name: DMM関連
+
+jobs:
+  job000:
+    file-name: sample_job
+    job-name: SampleJob
+  job001:
+    file-name: sale_notification_job
+    job-name: SaleNotificationJob
